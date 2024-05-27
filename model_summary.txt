@@ -1,0 +1,219 @@
+
+Call:
+lm(formula = Global_Sales ~ Platform + Year + Genre + Publisher + 
+    NA_Sales + JP_Sales + EU_Sales + Other_Sales, data = games_data)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-0.0201428 -0.0006867 -0.0001445  0.0002628  0.0200523 
+
+Coefficients:
+                                                  Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                                      3.456e-02  4.063e-02     0.851   0.3950    
+Platform3DO                                     -2.432e-04  4.122e-03    -0.059   0.9530    
+Platform3DS                                      2.866e-04  9.142e-04     0.313   0.7539    
+PlatformDC                                       5.885e-04  1.060e-03     0.555   0.5788    
+PlatformDS                                       3.271e-04  8.278e-04     0.395   0.6928    
+PlatformGB                                      -1.795e-04  8.957e-04    -0.200   0.8411    
+PlatformGBA                                      6.972e-04  7.846e-04     0.889   0.3742    
+PlatformGC                                       6.812e-04  7.991e-04     0.852   0.3940    
+PlatformGEN                                      4.494e-04  1.276e-03     0.352   0.7247    
+PlatformGG                                      -4.343e-06  5.287e-03    -0.001   0.9993    
+PlatformN64                                      4.815e-04  7.864e-04     0.612   0.5404    
+PlatformNES                                     -2.037e-05  8.587e-04    -0.024   0.9811    
+PlatformNG                                       2.835e-05  2.182e-03     0.013   0.9896    
+PlatformPC                                       7.408e-04  8.498e-04     0.872   0.3834    
+PlatformPCFX                                     1.239e-04  6.807e-03     0.018   0.9855    
+PlatformPS                                      -2.250e-04  7.381e-04    -0.305   0.7605    
+PlatformPS2                                     -8.645e-05  7.863e-04    -0.110   0.9125    
+PlatformPS3                                      8.627e-05  8.654e-04     0.100   0.9206    
+PlatformPS4                                     -4.762e-06  9.537e-04    -0.005   0.9960    
+PlatformPSP                                      7.630e-05  8.382e-04     0.091   0.9275    
+PlatformPSV                                      1.180e-04  9.318e-04     0.127   0.8992    
+PlatformSAT                                      3.506e-05  8.305e-04     0.042   0.9663    
+PlatformSCD                                      1.696e-03  2.255e-03     0.752   0.4519    
+PlatformSNES                                    -1.392e-05  7.865e-04    -0.018   0.9859    
+PlatformTG16                                     1.573e-04  4.354e-03     0.036   0.9712    
+PlatformWii                                      3.971e-04  8.422e-04     0.471   0.6373    
+PlatformWiiU                                     5.643e-04  9.929e-04     0.568   0.5698    
+PlatformWS                                       4.995e-05  2.277e-03     0.022   0.9825    
+PlatformX360                                     3.670e-04  8.538e-04     0.430   0.6673    
+PlatformXB                                       6.070e-04  7.923e-04     0.766   0.4436    
+PlatformXOne                                     1.043e-04  9.776e-04     0.107   0.9150    
+Year                                            -1.733e-05  2.043e-05    -0.848   0.3962    
+GenreAdventure                                  -1.340e-04  1.991e-04    -0.673   0.5010    
+GenreFighting                                   -3.678e-04  2.185e-04    -1.683   0.0923 .  
+GenreMisc                                        3.249e-05  1.699e-04     0.191   0.8483    
+GenrePlatform                                   -9.613e-05  2.106e-04    -0.457   0.6480    
+GenrePuzzle                                      2.553e-04  2.602e-04     0.981   0.3265    
+GenreRacing                                     -2.705e-04  1.909e-04    -1.417   0.1564    
+GenreRole-Playing                               -1.552e-04  1.863e-04    -0.833   0.4049    
+GenreShooter                                    -6.307e-05  1.823e-04    -0.346   0.7294    
+GenreSimulation                                 -3.177e-05  2.182e-04    -0.146   0.8842    
+GenreSports                                     -1.371e-04  1.572e-04    -0.872   0.3833    
+GenreStrategy                                   -2.873e-05  2.403e-04    -0.120   0.9048    
+Publisher1C Company                             -3.071e-04  4.283e-03    -0.072   0.9428    
+Publisher20th Century Fox Video Games            1.830e-03  3.881e-03     0.472   0.6372    
+Publisher2D Boy                                 -7.544e-04  6.055e-03    -0.125   0.9008    
+Publisher3DO                                    -6.190e-04  3.152e-03    -0.196   0.8443    
+Publisher49Games                                 2.885e-05  6.052e-03     0.005   0.9962    
+Publisher505 Games                               8.974e-04  3.050e-03     0.294   0.7686    
+Publisher5pb                                     2.817e-04  3.103e-03     0.091   0.9277    
+Publisher7G//AMES                                4.870e-03  4.003e-03     1.217   0.2238    
+Publisher989 Sports                              1.047e-02  6.053e-03     1.730   0.0836 .  
+Publisher989 Studios                             1.948e-03  3.342e-03     0.583   0.5599    
+PublisherAbylight                                1.967e-04  6.052e-03     0.032   0.9741    
+PublisherAcclaim Entertainment                   7.879e-04  3.053e-03     0.258   0.7964    
+PublisherAccolade                                7.162e-03  4.284e-03     1.672   0.0945 .  
+PublisherAckkstudios                             1.810e-04  3.451e-03     0.052   0.9582    
+PublisherAcquire                                -4.474e-04  3.360e-03    -0.133   0.8941    
+PublisherActivision                              4.074e-04  3.032e-03     0.134   0.8931    
+PublisherActivision Blizzard                    -3.772e-04  6.054e-03    -0.062   0.9503    
+PublisherActivision Value                       -5.727e-04  3.181e-03    -0.180   0.8571    
+PublisherAdeline Software                       -9.730e-03  6.053e-03    -1.607   0.1080    
+PublisherAerosoft                               -4.071e-04  4.792e-03    -0.085   0.9323    
+PublisherAgatsuma Entertainment                 -1.260e-04  4.283e-03    -0.029   0.9765    
+PublisherAgetec                                  1.607e-03  3.549e-03     0.453   0.6507    
+PublisherAksys Games                             1.580e-03  3.552e-03     0.445   0.6564    
+PublisherAlawar Entertainment                   -4.158e-04  4.787e-03    -0.087   0.9308    
+PublisherAlchemist                               5.129e-04  3.132e-03     0.164   0.8699    
+PublisherAlternative Software                   -1.474e-03  3.710e-03    -0.397   0.6911    
+PublisherAltron                                 -5.093e-04  6.054e-03    -0.084   0.9330    
+PublisherAlvion                                 -9.409e-05  4.785e-03    -0.020   0.9843    
+PublisherAmerican Softworks                     -9.726e-03  6.053e-03    -1.607   0.1081    
+PublisherAngel Studios                           1.768e-04  4.297e-03     0.041   0.9672    
+PublisherAnswer Software                        -1.612e-04  6.083e-03    -0.027   0.9789    
+PublisherAQ Interactive                         -5.730e-03  3.829e-03    -1.497   0.1345    
+PublisherAqua Plus                              -9.293e-05  3.219e-03    -0.029   0.9770    
+PublisherAques                                   4.050e-04  6.053e-03     0.067   0.9467    
+PublisherArc System Works                        6.674e-04  3.197e-03     0.209   0.8346    
+PublisherArena Entertainment                    -2.785e-05  4.906e-03    -0.006   0.9955    
+PublisherAria                                    4.228e-04  6.050e-03     0.070   0.9443    
+PublisherArika                                  -3.139e-03  4.279e-03    -0.734   0.4633    
+PublisherArtDink                                -1.971e-03  3.496e-03    -0.564   0.5728    
+PublisherAruze Corp                              3.605e-03  4.286e-03     0.841   0.4002    
+PublisherASC Games                               4.695e-04  4.283e-03     0.110   0.9127    
+PublisherAscaron Entertainment                  -4.020e-04  6.053e-03    -0.066   0.9471    
+PublisherAscaron Entertainment GmbH             -4.514e-04  4.283e-03    -0.105   0.9161    
+PublisherASCII Entertainment                    -2.535e-04  3.252e-03    -0.078   0.9379    
+PublisherASCII Media Works                       2.361e-04  3.495e-03     0.068   0.9461    
+PublisherAsgard                                  1.980e-04  3.554e-03     0.056   0.9556    
+PublisherASK                                    -3.654e-05  6.068e-03    -0.006   0.9952    
+PublisherAsmik Ace Entertainment                 4.204e-04  4.280e-03     0.098   0.9217    
+PublisherAsmik Corp                              1.533e-04  4.800e-03     0.032   0.9745    
+PublisherAspyr                                  -2.676e-03  3.549e-03    -0.754   0.4509    
+PublisherAstragon                                3.132e-03  3.705e-03     0.845   0.3980    
+PublisherAsylum Entertainment                    1.698e-03  3.706e-03     0.458   0.6468    
+PublisherAtari                                   8.683e-04  3.041e-03     0.286   0.7752    
+PublisherAthena                                  3.915e-05  4.786e-03     0.008   0.9935    
+PublisherAtlus                                  -7.030e-04  3.096e-03    -0.227   0.8204    
+PublisherAvalon Interactive                     -1.599e-03  3.709e-03    -0.431   0.6664    
+PublisherAvanquest                               5.854e-04  3.202e-03     0.183   0.8550    
+PublisherAvanquest Software                      1.097e-03  3.495e-03     0.314   0.7536    
+PublisherAxela                                  -9.582e-03  6.053e-03    -1.583   0.1135    
+PublisherBAM! Entertainment                      1.811e-03  3.155e-03     0.574   0.5661    
+PublisherBanpresto                              -1.705e-05  3.089e-03    -0.006   0.9956    
+PublisherBenesse                                -1.274e-04  3.708e-03    -0.034   0.9726    
+PublisherBerkeley                                3.465e-04  6.053e-03     0.057   0.9543    
+PublisherBethesda Softworks                      1.310e-03  3.094e-03     0.424   0.6719    
+PublisherBig Ben Interactive                     2.976e-03  3.617e-03     0.823   0.4106    
+PublisherBig Fish Games                          4.619e-03  4.788e-03     0.965   0.3347    
+PublisherBigben Interactive                     -4.056e-04  3.362e-03    -0.121   0.9040    
+PublisherbitComposer Games                      -6.165e-03  3.833e-03    -1.608   0.1078    
+PublisherBlack Bean Games                        1.209e-03  3.176e-03     0.381   0.7034    
+PublisherBlack Label Games                       3.033e-04  6.051e-03     0.050   0.9600    
+PublisherBlast! Entertainment Ltd                1.729e-03  3.706e-03     0.467   0.6407    
+PublisherBlue Byte                              -5.910e-04  4.790e-03    -0.123   0.9018    
+PublisherBMG Interactive Entertainment           3.993e-04  3.623e-03     0.110   0.9122    
+PublisherBohemia Interactive                    -3.471e-04  6.055e-03    -0.057   0.9543    
+PublisherBomb                                   -1.881e-04  6.083e-03    -0.031   0.9753    
+PublisherBoost On                                3.843e-04  6.053e-03     0.063   0.9494    
+PublisherBPS                                    -1.638e-05  4.796e-03    -0.003   0.9973    
+PublisherBrash Entertainment                     2.084e-03  3.453e-03     0.604   0.5461    
+PublisherBroccoli                                3.244e-04  3.228e-03     0.100   0.9200    
+PublisherBushiRoad                               3.660e-04  6.053e-03     0.060   0.9518    
+PublisherCapcom                                  4.832e-04  3.039e-03     0.159   0.8737    
+PublisherCave                                   -2.255e-05  3.454e-03    -0.007   0.9948    
+PublisherCBS Electronics                        -1.796e-04  6.083e-03    -0.030   0.9764    
+PublisherCCP                                     9.574e-03  6.056e-03     1.581   0.1139    
+PublisherCDV Software Entertainment              3.105e-03  3.705e-03     0.838   0.4020    
+PublisherChunSoft                                1.720e-04  3.271e-03     0.053   0.9581    
+PublisherCity Interactive                        1.639e-03  3.269e-03     0.501   0.6161    
+PublisherCloud Imperium Games Corporation        4.552e-04  4.788e-03     0.095   0.9243    
+PublisherCoconuts Japan                          1.761e-04  4.789e-03     0.037   0.9707    
+PublisherCodemasters                             9.297e-04  3.059e-03     0.304   0.7612    
+PublisherCodemasters Online                     -3.446e-04  6.054e-03    -0.057   0.9546    
+PublisherCokeM Interactive                      -7.279e-05  6.050e-03    -0.012   0.9904    
+PublisherColeco                                 -2.132e-03  3.880e-03    -0.549   0.5828    
+PublisherComfort                                 3.837e-04  3.709e-03     0.103   0.9176    
+PublisherCommseed                               -1.196e-04  6.050e-03    -0.020   0.9842    
+PublisherCompile                                 1.455e-03  3.714e-03     0.392   0.6952    
+PublisherCompile Heart                           3.138e-04  3.249e-03     0.097   0.9231    
+PublisherConspiracy Entertainment                2.063e-03  3.335e-03     0.619   0.5362    
+PublisherCore Design Ltd.                        2.576e-04  4.789e-03     0.054   0.9571    
+PublisherCPG Products                           -1.571e-04  6.083e-03    -0.026   0.9794    
+PublisherCrave Entertainment                     3.390e-04  3.090e-03     0.110   0.9126    
+PublisherCreative Core                          -3.805e-05  4.279e-03    -0.009   0.9929    
+PublisherCrimson Cow                             4.594e-03  4.788e-03     0.960   0.3373    
+PublisherCrystal Dynamics                       -1.570e-03  3.833e-03    -0.410   0.6821    
+PublisherCTO SpA                                 3.979e-04  4.788e-03     0.083   0.9338    
+PublisherCulture Brain                           5.333e-05  4.007e-03     0.013   0.9894    
+PublisherCulture Publishers                      4.332e-05  6.054e-03     0.007   0.9943    
+PublisherCyberFront                              2.621e-04  3.336e-03     0.079   0.9374    
+PublisherCygames                                 3.384e-04  6.059e-03     0.056   0.9555    
+PublisherD3Publisher                             4.893e-04  3.051e-03     0.160   0.8726    
+PublisherDaedalic                               -6.989e-03  4.285e-03    -1.631   0.1029    
+PublisherDaedalic Entertainment                  6.382e-03  4.286e-03     1.489   0.1364    
+PublisherDaito                                   1.755e-04  4.006e-03     0.044   0.9651    
+PublisherData Age                                4.816e-03  4.826e-03     0.998   0.3183    
+PublisherData Design Interactive                 3.311e-03  4.282e-03     0.773   0.4394    
+PublisherData East                               1.715e-04  4.794e-03     0.036   0.9715    
+PublisherDatam Polystar                          3.995e-04  4.785e-03     0.084   0.9335    
+PublisherDeep Silver                             1.156e-04  3.064e-03     0.038   0.9699    
+PublisherDestination Software, Inc               1.372e-03  3.385e-03     0.405   0.6851    
+PublisherDestineer                              -2.785e-04  3.126e-03    -0.089   0.9290    
+PublisherDetn8 Games                            -1.402e-05  6.052e-03    -0.002   0.9982    
+PublisherDevolver Digital                       -1.452e-04  4.787e-03    -0.030   0.9758    
+PublisherDHM Interactive                         3.360e-03  4.280e-03     0.785   0.4324    
+PublisherDigiCube                                3.570e-04  6.051e-03     0.059   0.9530    
+PublisherDisney Interactive Studios              1.187e-03  3.048e-03     0.389   0.6970    
+PublisherDorart                                  1.483e-04  4.788e-03     0.031   0.9753    
+Publisherdramatic create                         3.568e-04  3.839e-03     0.093   0.9260    
+PublisherDreamCatcher Interactive               -7.174e-04  3.282e-03    -0.219   0.8270    
+PublisherDreamWorks Interactive                  3.973e-04  6.055e-03     0.066   0.9477    
+PublisherDSI Games                               1.540e-03  3.706e-03     0.416   0.6777    
+PublisherDTP Entertainment                       3.544e-04  3.128e-03     0.113   0.9098    
+PublisherDusenberry Martin Racing               -4.397e-03  4.792e-03    -0.918   0.3588    
+PublisherEA Games                                2.964e-04  6.053e-03     0.049   0.9609    
+PublisherEasy Interactive                        9.728e-03  4.785e-03     2.033   0.0421 *  
+PublisherEcole                                   7.091e-04  6.053e-03     0.117   0.9067    
+PublisherEdia                                    1.208e-04  4.788e-03     0.025   0.9799    
+PublisherEidos Interactive                       2.058e-04  3.050e-03     0.067   0.9462    
+PublisherElectronic Arts                         2.278e-04  3.031e-03     0.075   0.9401    
+PublisherElectronic Arts Victor                 -4.659e-03  4.788e-03    -0.973   0.3305    
+PublisherElf                                     7.153e-05  4.804e-03     0.015   0.9881    
+PublisherElite                                   2.942e-04  6.055e-03     0.049   0.9613    
+PublisherEmpire Interactive                     -9.549e-04  3.115e-03    -0.307   0.7592    
+PublisherEncore                                 -1.219e-04  4.005e-03    -0.030   0.9757    
+PublisherEnix Corporation                        1.910e-04  3.184e-03     0.060   0.9522    
+PublisherEnjoy Gaming ltd.                       3.674e-06  6.051e-03     0.001   0.9995    
+PublisherEnterbrain                              2.910e-04  3.315e-03     0.088   0.9301    
+PublisherEON Digital Entertainment               3.393e-04  6.053e-03     0.056   0.9553    
+PublisherEpic Games                              3.849e-04  6.057e-03     0.064   0.9493    
+PublisherEpoch                                   5.065e-05  3.634e-03     0.014   0.9889    
+PublisherErtain                                 -6.698e-05  6.052e-03    -0.011   0.9912    
+PublisherESP                                     1.002e-04  3.838e-03     0.026   0.9792    
+PublisherEssential Games                         3.138e-04  4.279e-03     0.073   0.9415    
+PublisherEvolution Games                         1.029e-02  6.053e-03     1.700   0.0892 .  
+PublisherEvolved Games                          -1.173e-03  3.550e-03    -0.330   0.7410    
+PublisherExcalibur Publishing                   -3.046e-04  4.009e-03    -0.076   0.9394    
+PublisherExperience Inc.                         3.979e-04  4.291e-03     0.093   0.9261    
+PublisherExtreme Entertainment Group             2.319e-04  6.056e-03     0.038   0.9695    
+ [ reached getOption("max.print") -- omitted 423 rows ]
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.005237 on 15704 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 2.346e+06 on 622 and 15704 DF,  p-value: < 2.2e-16
+
